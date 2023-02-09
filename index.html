@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSBB | 온라인 시향소</title>
+
+    <style>
+        /* 이서윤체 폰트 적용을 위한 코드 */
+        @font-face {
+            font-family: "LeeSeoyun";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+
+        .header_top {
+            width: auto;
+            height: auto;
+            /* background-color: yellow; */
+            padding: 42px 0px 0px 138px;
+            font-size: 13.5px;
+            color: white;
+            font-family: 'Do Hyeon', sans-serif;
+
+        }
+
+        .header_top_2 {
+            width: auto;
+            height: auto;
+            font-size: 37.5px;
+
+        }
+
+
+
+
+        /* body태그 자체에 css 요소 부여 */
+        body {
+            /* font-family: "LeeSeoyun"; */
+            margin: 0;
+            background-size: cover;
+            height: 10px;
+            width: auto;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* background-color: ivory; */
+            background-image: url("./bg_perfume.png");
+
+
+        }
+
+        /* 첫페이지 */
+        .container {
+            height: 650px;
+
+            /* background-color: ivory; */
+
+
+        }
+
+        .body_title_1 {
+            color: white;
+            /* font-weight: bold; */
+            font-size: 65px;
+            font-family: 'Do Hyeon', sans-serif;
+            /* padding-left: 50px; */
+            padding: 170px 0px 0px 170px;
+
+        }
+
+        .body_title_2 {
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+            /* font-family: 'Do Hyeon', sans-serif; */
+            padding: 19px 0px 0px 170px;
+
+        }
+
+        .body_title_3 {
+            color: white;
+            /* font-weight: bold; */
+            font-size: 18px;
+            /* font-family: 'Do Hyeon', sans-serif; */
+            padding: 15px 0px 0px 170px;
+
+
+        }
+
+        .app_container {
+            width: 500px;
+            height: 50px;
+            /* background-color: yellow; */
+            padding: 30px 0px 0px 170px;
+
+        }
+
+
+
+        .link_google {
+            width: 170px;
+            height: 50px;
+            /* background-color: white; */
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            /* 눌렀을때 선 생기는거 지우기 */
+            box-shadow: 3px 3px 5px 0px black;
+            background-image: url("./googleplay.png");
+            background-size: cover;
+
+
+        }
+
+        .link_apple {
+            width: 170px;
+            height: 50px;
+            /* background-color: white; */
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            /* 눌렀을때 선 생기는거 지우기 */
+            box-shadow: 3px 3px 5px 0px black;
+            background-image: url("./appstore.png");
+            background-size: cover;
+
+
+        }
+
+
+        /* .button_google {
+            width: 100px;
+            background-color: aqua;
+            border-radius: 20%;
+        }
+
+        .button_apple {
+            width: 100px;
+            border-radius: 20%;
+
+        } */
+    </style>
+
+
+
+</head>
+
+<body>
+    <section>
+        <div>
+            <header class="header_top">뿌리고 싶을때 바로 뿌려
+                <header class="header_top_2">뿌싶바뿌 </header>
+            </header>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="body_title_1">
+                향수사기전엔 뿌싶바뿌!
+            </div>
+            <div class="body_title_2">
+                시향테스터 배송플랫폼
+            </div>
+            <div class="body_title_3">
+                내가 궁금한 향,
+                내가 궁금했던 향<br />
+                뿌싶바뿌에서 시향가능합니다!
+            </div>
+            <div class="app_container">
+
+                <a class="link_google" target="_blank" href="https://spartacodingclub.kr/"></a>
+                <a class="link_apple" target="_blank" href="https://spartacodingclub.kr/"></a>
+
+
+
+
+                <!-- <button data-v-2fbe05d4="" class="button_google"><img data-v-2fbe05d4="" alt="플레이스토어 아이콘"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij4KICAgIDxnIGNsYXNzPSJwYWludGVkIiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0xNC42MiAxMi41NzFsMy43NS0zLjY1M0w1LjczNyAxLjc0Yy0uMzQ4LS4xOTgtLjY3Ny0uMjkxLS45Ny0uMjkxLS4zMyAwLS42MTYuMTItLjgyNy4zNDRsMTAuNjggMTAuNzc3ek0zLjk1IDI0LjkwMmMuMjAzLjIxNi40NzcuMzMzLjc5NC4zMzdoLjAzNmMuMjgyLS4wMDQuNTk3LS4wOTUuOTMtLjI4NGwxMi4zNy03LjAyOC0zLjUzLTMuNTc3LTEwLjYgMTAuNTUyek0xNS41NSAxMy40NWwzLjU1IDMuNTUzIDQuMjczLTIuMzdjMS4xNy0uNjYzIDEuMTctMS43NSAwLTIuNDE0TDE5LjIwNSA5LjY1bC0zLjY1NSAzLjh6TTMuMDQ0IDIuNTEyYy0uMjQ4LjI2MS0uMzk0LjY2OC0uMzk0IDEuMTk2djE4LjgyYzAgLjUyNy4xNDYuOTMzLjM5NCAxLjE5NWwuMDYzLjA2MkwxMy41NSAxMy41NCAzLjEwNyAyLjQ1bC0uMDYzLjA2MnoiLz4KICAgIDwvZz4KPC9zdmc+Cg==">
+                    <p data-v-2fbe05d4="" class="text text--white text--h3">Google Play</p>
+                </button>
+                <span>　</span>
+                <button data-v-2fbe05d4="" class="button_apple"><img data-v-2fbe05d4="" alt="앱 스토어 아이콘"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij4KICAgIDxwYXRoIGNsYXNzPSJwYWludGVkIiBmaWxsPSIjRkZGIiBkPSJNMTMuMjIzIDYuNDMzYzEuMjc2IDAgMi4zMi0uNDkzIDMuMjc3LTEuNTM3Ljg3LTEuMDE1IDEuMzA1LTIuMjkxIDEuMzA1LTMuNTY3LTEuMjQ3LjIwMy0yLjM3OC43ODMtMy4yNDggMS43NC0uODQxIDEuMDQ0LTEuMzM0IDIuMTE3LTEuMzM0IDMuMzY0em0tMi44NzEgMTcuNDU4Yy4zMTkgMCAuNzgzLS4xMTYgMS4zNjMtLjI5IDEuMDE1LS40MDYgMS43NjktLjYzOCAyLjExNy0uNjM4LjQwNiAwIDEuMDE1LjE0NSAxLjY4Mi40NjQuODEyLjMxOSAxLjQyMS40MzUgMS45NzIuNDM1LjgxMiAwIDEuNTA4LS4xNzQgMi4wODgtLjU4IDEuMzYzLS45ODYgMi44NDItMy4zMDYgMy4zOTMtNS4xNjItMS45NDMtLjUyMi0zLjEzMi0yLjc1NS0zLjEzMi00Ljg0MyAwLTEuNjI0IDEuMDQ0LTMuODU3IDIuNjM5LTQuMzUtLjMxOS0uNjA5LS42OTYtMS4wNzMtMS4wNDQtMS40MjEtLjg3LS43ODMtMS45MTQtMS4yMTgtMy4yNDgtMS4yMTgtLjUyMiAwLTEuNDIxLjI5LTIuNzU1LjgxMi0uNTUxLjIzMi0xLjEzMS4zMTktMS42MjQuMzE5LS42MDkgMC0xLjE2LS4xNDUtMS44MjctLjU1MS0uNjk2LS4zNDgtMS40NzktLjU4LTIuNTIzLS41OC0zLjQ1MSAwLTUuNzQyIDMuNDUxLTUuNzQyIDcuMDQ3IDAgMy42MjUgMS40NzkgNy4xMDUgNC4wNiA5LjQ4My44NDEuNjk2IDEuNjUzIDEuMDczIDIuNTgxIDEuMDczeiIvPgo8L3N2Zz4K">
+                    <p data-v-2fbe05d4="" class="text text--white text--h3">App Store</p>
+                </button> -->
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <style data-emotion="css 1nlij3y">
+        .css-1nlij3y {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: #111;
+            padding: 110px 20px 334px;
+
+        }
+
+        .css-1nlij3y .wrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1045px;
+        }
+
+        .css-1nlij3y p {
+            font-family: 'Pretendard';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #cccccc;
+        }
+
+        .css-1nlij3y strong {
+            font-weight: 600;
+
+        }
+
+        @media (max-width: 1139px) {
+            .css-1nlij3y {
+                padding: 100px 20px 154px;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            .css-1nlij3y .wrapper {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <footer class="css-1nlij3y">
+        <div class="wrapper">
+            <div>
+
+
+                <p><strong>BSBB 고객센터</strong></p>
+
+                <p style="padding-top:26px">메일 : cs@bsbb.com<br />
+                    대표번호 : 02-0000-0000
+                    <br />업무시간 : 평일 오전 9시 - 오후 6시 (주말, 공휴일 휴무) | 점심시간 : 12:30 ~ 13:30
+                </p>
+
+                <p style="padding-top:62px"><strong>(주) BSBB</strong><br />대표 : 김ㅇㅇ<br />주소 : 서울시 강남구 테헤란로 가는게
+                    목표</p>
+                <p style="padding-top:10px">사업자등록번호 : 2xx-xx-xxxxxx<br />통신판매업 신고번호 : 2023-서울-00000</p>
+
+
+
+                <p style="padding-top:26px">
+                    <!-- BSBB에서 판매되는 상품 중에는 BSBB에 입점한 개별 판매자가 판매하는 상품이 포함되어 있습니다.<br />
+                        따라서, 해당 상품의 거래 전반에 관한 의무와 책임은 각 입점 판매자에게 있습니다.<br /> -->
+                    BSBB는 통신판매중개자로서 통신판매의 당사자가 아닙니다.<br />
+                    따라서, BSBB는 판매자가 등록한 상품, 거래정보 및 거래에 대하여 의무와 책임을 부담하지 않습니다.
+                </p>
+                <p style="padding-top:4px">Copyright © BSBB Corp. All rights reserved.</p>
+
+
+                <!-- 링크데코 -->
+                <style data-emotion="css h05r2j">
+                    .css-h05r2j {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        padding: 32px 0 0;
+                    }
+
+                    .css-h05r2j li {
+                        padding: 0 12px;
+                    }
+
+                    .css-h05r2j li:first-of-type {
+                        padding-left: 0;
+                    }
+
+                    .css-h05r2j li a {
+                        white-space: nowrap;
+                        font-family: 'Pretendard';
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 21px;
+                    }
+
+                    .css-h05r2j li a,
+                    .css-h05r2j li a:hover,
+                    .css-h05r2j li a:active,
+                    .css-h05r2j li a:focus {
+                        color: #999999;
+                    }
+
+                    @media (max-width: 767px) {
+                        .css-h05r2j {
+                            -webkit-box-flex-wrap: wrap;
+                            -webkit-flex-wrap: wrap;
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                        }
+
+                        .css-h05r2j li {
+                            padding: 10px 12px;
+                        }
+                    }
+                </style>
+
+                <!-- test_link쪽에 해당하는 http 링크 넣으면 됨 -->
+                <ul class="css-h05r2j">
+                    <li><a href="test_link" target="_blank" rel="noreferrer">사업자정보확인</a></li>
+                    <li><a href="test_link" target="_blank" rel="noreferrer">셀러 이용약관</a></li>
+                    <li><a href="test_link" target="_blank" rel="noreferrer">유저 이용약관</a></li>
+                    <li><a href="test_link" target="_blank" rel="noreferrer"><strong>셀러 개인정보처리방침</strong></a>
+                    </li>
+                    <li><a href="test_link" target="_blank" rel="noreferrer"><strong>유저 개인정보처리방침</strong></a>
+                    </li>
+                    <li><a href="test_link" target="_blank" rel="noreferrer">인재영입</a></li>
+                </ul>
+            </div>
+            <div>
+                <style data-emotion="css 1dywg9p">
+                    .css-1dywg9p {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                    }
+
+                    .css-1dywg9p a {
+                        display: block;
+                        background: none;
+                        border: 0;
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                    }
+
+                    @media (max-width: 1139px) {
+                        .css-1dywg9p {
+                            padding: 50px 0 0;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                        }
+                    }
+                </style>
+                <div class="css-1dywg9p">
+                    <style data-emotion="css k7n2q4">
+                        .css-k7n2q4 {
+                            margin-left: 32px;
+                        }
+
+                        /* test_link 부분 http 주소넣기 */
+                    </style><a type="instagram" href="test_link" aria-label="instagram" target="_blank" rel="noreferrer"
+                        class="css-k7n2q4"><svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <g clip-path="url(#clip0_606_5265)">
+                                <path
+                                    d="M12.7241 2.71321C16.1239 2.71321 16.5265 2.72813 17.8635 2.78777C19.1061 2.84244 19.7771 3.0512 20.2244 3.22516C20.8159 3.4538 21.2433 3.73214 21.6857 4.1745C22.133 4.62184 22.4064 5.04432 22.635 5.63579C22.809 6.08312 23.0178 6.75909 23.0724 7.99671C23.1321 9.33871 23.147 9.74131 23.147 13.1361C23.147 16.5358 23.1321 16.9384 23.0724 18.2754C23.0178 19.518 22.809 20.189 22.635 20.6364C22.4064 21.2278 22.1281 21.6553 21.6857 22.0976C21.2384 22.545 20.8159 22.8183 20.2244 23.047C19.7771 23.2209 19.1011 23.4297 17.8635 23.4844C16.5215 23.544 16.1189 23.5589 12.7241 23.5589C9.32441 23.5589 8.92181 23.544 7.58478 23.4844C6.34219 23.4297 5.67119 23.2209 5.22386 23.047C4.63238 22.8183 4.20493 22.54 3.76257 22.0976C3.31523 21.6503 3.04186 21.2278 2.81323 20.6364C2.63926 20.189 2.43051 19.5131 2.37584 18.2754C2.31619 16.9334 2.30128 16.5308 2.30128 13.1361C2.30128 9.73634 2.31619 9.33374 2.37584 7.99671C2.43051 6.75412 2.63926 6.08312 2.81323 5.63579C3.04186 5.04432 3.3202 4.61686 3.76257 4.1745C4.2099 3.72717 4.63238 3.4538 5.22386 3.22516C5.67119 3.0512 6.34716 2.84244 7.58478 2.78777C8.92181 2.72813 9.32441 2.71321 12.7241 2.71321ZM12.7241 0.421875C9.26973 0.421875 8.83731 0.436786 7.4804 0.496431C6.12846 0.556075 5.199 0.774771 4.3938 1.0879C3.55381 1.41595 2.84305 1.84837 2.13726 2.55913C1.4265 3.26492 0.994073 3.97569 0.666029 4.81071C0.352896 5.62088 0.1342 6.54537 0.0745555 7.89731C0.0149111 9.25919 0 9.69161 0 13.146C0 16.6004 0.0149111 17.0328 0.0745555 18.3898C0.1342 19.7417 0.352896 20.6712 0.666029 21.4764C0.994073 22.3163 1.4265 23.0271 2.13726 23.7329C2.84305 24.4387 3.55381 24.8761 4.38883 25.1992C5.199 25.5123 6.12349 25.731 7.47543 25.7906C8.83234 25.8503 9.26476 25.8652 12.7192 25.8652C16.1736 25.8652 16.606 25.8503 17.9629 25.7906C19.3148 25.731 20.2443 25.5123 21.0495 25.1992C21.8845 24.8761 22.5953 24.4387 23.3011 23.7329C24.0069 23.0271 24.4443 22.3163 24.7673 21.4813C25.0805 20.6712 25.2992 19.7467 25.3588 18.3947C25.4185 17.0378 25.4334 16.6054 25.4334 13.151C25.4334 9.69658 25.4185 9.26416 25.3588 7.90725C25.2992 6.55531 25.0805 5.62585 24.7673 4.82065C24.4542 3.97569 24.0218 3.26492 23.311 2.55913C22.6052 1.85334 21.8945 1.41595 21.0594 1.09287C20.2493 0.779741 19.3248 0.561045 17.9728 0.501401C16.611 0.436786 16.1785 0.421875 12.7241 0.421875Z"
+                                    fill="white" fill-opacity="0.59"></path>
+                                <path
+                                    d="M12.7245 6.61035C9.11602 6.61035 6.18848 9.5379 6.18848 13.1464C6.18848 16.7549 9.11602 19.6824 12.7245 19.6824C16.333 19.6824 19.2605 16.7549 19.2605 13.1464C19.2605 9.5379 16.333 6.61035 12.7245 6.61035ZM12.7245 17.3861C10.3835 17.3861 8.48479 15.4874 8.48479 13.1464C8.48479 10.8053 10.3835 8.90666 12.7245 8.90666C15.0656 8.90666 16.9642 10.8053 16.9642 13.1464C16.9642 15.4874 15.0656 17.3861 12.7245 17.3861Z"
+                                    fill="white" fill-opacity="0.59"></path>
+                                <path
+                                    d="M21.045 6.3511C21.045 7.19606 20.3591 7.877 19.5191 7.877C18.6741 7.877 17.9932 7.19109 17.9932 6.3511C17.9932 5.50614 18.6791 4.8252 19.5191 4.8252C20.3591 4.8252 21.045 5.51111 21.045 6.3511Z"
+                                    fill="white" fill-opacity="0.59"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_606_5265">
+                                    <rect width="25.4483" height="25.4483" fill="white"
+                                        transform="translate(0 0.421875)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></a><a type="kakao" href="test_link" aria-label="kakao" target="_blank" rel="noreferrer"
+                        class="css-k7n2q4"><svg width="29" height="27" viewBox="0 0 29 27" fill="none">
+                            <g clip-path="url(#clip0_606_5268)">
+                                <path d="M11.3555 10.0508L10.3984 12.7149H12.3426L11.3869 10.0535L11.3555 10.0508Z"
+                                    fill="white" fill-opacity="0.59"></path>
+                                <path
+                                    d="M14.4914 0.421875C6.48036 0.421875 0 5.41502 0 11.5741C0 15.3916 2.49343 18.7605 6.29438 20.7711L5.2458 26.2073C5.2347 26.2675 5.24203 26.3294 5.26688 26.3856C5.29172 26.4417 5.333 26.4896 5.38562 26.5233C5.43825 26.557 5.49992 26.5751 5.56303 26.5753C5.62613 26.5755 5.68791 26.5578 5.74076 26.5244L11.965 22.5559C11.965 22.5559 13.6302 22.7249 14.4914 22.7249C22.5024 22.7249 28.9828 17.7331 28.9828 11.5741C28.9828 5.41502 22.4953 0.421875 14.4914 0.421875ZM7.33868 14.7325C7.33785 14.9116 7.26438 15.0831 7.13411 15.2102C7.07055 15.2726 6.99482 15.3221 6.91132 15.3558C6.82782 15.3896 6.73821 15.4069 6.64772 15.4069H6.49609C6.40519 15.4065 6.31527 15.3887 6.23153 15.3545C6.14779 15.3203 6.0719 15.2703 6.00827 15.2075C5.8789 15.0798 5.80558 14.9086 5.8037 14.7297V9.85153H4.44612C4.25641 9.85153 4.07448 9.77859 3.94034 9.64875C3.8062 9.51891 3.73084 9.34281 3.73084 9.15919C3.73084 8.97557 3.8062 8.79947 3.94034 8.66963C4.07448 8.53979 4.25641 8.46685 4.44612 8.46685H8.62331C8.81301 8.46685 8.99494 8.53979 9.12908 8.66963C9.26322 8.79947 9.33858 8.97557 9.33858 9.15919C9.33858 9.34281 9.26322 9.51891 9.12908 9.64875C8.99494 9.77859 8.81301 9.85153 8.62331 9.85153H7.33582L7.33868 14.7325ZM14.0279 15.3709C13.942 15.4 13.8509 15.4124 13.76 15.4073C13.6691 15.4022 13.5802 15.3796 13.4984 15.341C13.4165 15.3024 13.3434 15.2484 13.2833 15.1822C13.2232 15.116 13.1772 15.0389 13.1481 14.9554L12.7948 13.9709H9.94512L9.59178 14.9554C9.5625 15.039 9.51639 15.1161 9.45613 15.1823C9.39587 15.2485 9.32265 15.3025 9.2407 15.3411C9.15875 15.3797 9.0697 15.4023 8.97871 15.4074C8.88771 15.4125 8.79658 15.4001 8.71057 15.3709C8.62415 15.3418 8.54449 15.2965 8.47615 15.2376C8.40781 15.1787 8.35213 15.1074 8.31228 15.0276C8.27243 14.9479 8.24919 14.8614 8.24389 14.773C8.2386 14.6846 8.25134 14.596 8.2814 14.5124L8.28998 14.4902L8.30714 14.4459L8.33147 14.3808L8.36437 14.2963L8.403 14.1925L8.4502 14.0706L8.50171 13.9322C8.52174 13.8823 8.54033 13.8325 8.56035 13.7812C8.58038 13.73 8.60185 13.6719 8.62331 13.6165C8.64476 13.5611 8.66765 13.4988 8.69054 13.4406L8.76206 13.2537L8.83645 13.0584L8.91512 12.8549C8.94087 12.7843 8.96806 12.7164 8.99524 12.6444L9.07678 12.4298L9.16119 12.211C9.18837 12.1362 9.21698 12.0629 9.24559 11.9895C9.2742 11.9161 9.30137 11.8413 9.32998 11.7679L9.4144 11.5464L9.4988 11.3262C9.52598 11.2542 9.55458 11.1877 9.58176 11.1088L9.66331 10.897L9.74198 10.6906C9.7663 10.6242 9.79205 10.5522 9.8178 10.4912L9.89076 10.3015L9.95943 10.1202L10.0238 9.95123L10.0839 9.79337L10.1397 9.6549C10.1554 9.61336 10.1711 9.57044 10.1883 9.52752L10.2298 9.41674C10.2412 9.38628 10.2541 9.35581 10.2656 9.32397C10.2985 9.23673 10.4086 8.95287 10.4272 8.90164C10.4561 8.84312 10.4916 8.78786 10.5331 8.73686C10.5971 8.66174 10.6729 8.5968 10.7577 8.54439C10.8459 8.48834 10.9424 8.4454 11.0438 8.417C11.1521 8.38653 11.2643 8.37114 11.3771 8.37131C11.5814 8.36314 11.7836 8.41444 11.9575 8.5186C12.1314 8.62276 12.2691 8.775 12.3527 8.95564L14.4485 14.5151C14.5088 14.6825 14.4986 14.866 14.4202 15.0262C14.3418 15.1863 14.2013 15.3101 14.0293 15.3709H14.0279ZM18.3953 15.3625H15.5571C15.4721 15.3624 15.3879 15.3459 15.3095 15.3142C15.231 15.2825 15.1597 15.2362 15.0998 15.1778C15.0399 15.1194 14.9925 15.0501 14.9602 14.9739C14.928 14.8978 14.9116 14.8162 14.912 14.7339V9.11488C14.912 8.91694 14.9932 8.7271 15.1378 8.58714C15.2824 8.44717 15.4785 8.36854 15.683 8.36854C15.8875 8.36854 16.0836 8.44717 16.2282 8.58714C16.3728 8.7271 16.4541 8.91694 16.4541 9.11488V14.0997H18.3953C18.5625 14.1073 18.7202 14.1769 18.8357 14.2941C18.9513 14.4113 19.0157 14.5671 19.0157 14.7291C19.0157 14.891 18.9513 15.0468 18.8357 15.164C18.7202 15.2812 18.5625 15.3508 18.3953 15.3584V15.3625ZM24.4909 15.2739C24.4184 15.3268 24.3359 15.3652 24.2479 15.3869C24.16 15.4085 24.0686 15.4131 23.9788 15.4002C23.8891 15.3873 23.8029 15.3572 23.7253 15.3118C23.6476 15.2663 23.5801 15.2064 23.5267 15.1355L21.4796 12.5143L21.039 12.9435V14.6536C21.039 14.8515 20.9577 15.0414 20.8131 15.1813C20.6685 15.3213 20.4724 15.3999 20.2679 15.3999C20.0634 15.3999 19.8673 15.3213 19.7227 15.1813C19.5781 15.0414 19.4968 14.8515 19.4968 14.6536V9.11488C19.4968 8.91694 19.5781 8.7271 19.7227 8.58714C19.8673 8.44717 20.0634 8.36854 20.2679 8.36854C20.4724 8.36854 20.6685 8.44717 20.8131 8.58714C20.9577 8.7271 21.039 8.91694 21.039 9.11488V11.0728L23.4609 8.71748C23.5234 8.65594 23.598 8.60706 23.6803 8.57369C23.7626 8.54033 23.8509 8.52315 23.9401 8.52315C24.0293 8.52315 24.1176 8.54033 24.1999 8.57369C24.2822 8.60706 24.3568 8.65594 24.4193 8.71748C24.5464 8.8419 24.6177 9.00982 24.6177 9.18481C24.6177 9.35979 24.5464 9.52771 24.4193 9.65213L22.4595 11.5602L24.6239 14.3296C24.7357 14.4717 24.7846 14.651 24.7599 14.8281C24.7353 15.0052 24.639 15.1655 24.4923 15.2739H24.4909Z"
+                                    fill="white" fill-opacity="0.59"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_606_5268">
+                                    <rect width="28.9828" height="26.1552" fill="white"
+                                        transform="translate(0 0.421875)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></a><a type="youtube" href="test_link" aria-label="youtube" target="_blank"
+                        rel="noreferrer" class="css-k7n2q4"><svg width="29" height="26" viewBox="0 0 29 26" fill="none">
+                            <g clip-path="url(#clip0_606_5266)">
+                                <path
+                                    d="M29.1948 8.05631C29.1948 8.05631 28.9463 6.30177 28.1808 5.53136C27.2116 4.51741 26.1281 4.51244 25.631 4.45279C22.0723 4.19434 16.7291 4.19434 16.7291 4.19434H16.7192C16.7192 4.19434 11.376 4.19434 7.81724 4.45279C7.3202 4.51244 6.23666 4.51741 5.26744 5.53136C4.50201 6.30177 4.25846 8.05631 4.25846 8.05631C4.25846 8.05631 4 10.119 4 12.1767V14.1052C4 16.163 4.25349 18.2257 4.25349 18.2257C4.25349 18.2257 4.50201 19.9802 5.26247 20.7506C6.23169 21.7646 7.50411 21.7298 8.07073 21.8391C10.1086 22.033 16.7241 22.0926 16.7241 22.0926C16.7241 22.0926 22.0723 22.0827 25.631 21.8292C26.1281 21.7696 27.2116 21.7646 28.1808 20.7506C28.9463 19.9802 29.1948 18.2257 29.1948 18.2257C29.1948 18.2257 29.4483 16.1679 29.4483 14.1052V12.1767C29.4483 10.119 29.1948 8.05631 29.1948 8.05631ZM14.0948 16.4463V9.29393L20.9688 12.8825L14.0948 16.4463Z"
+                                    fill="white" fill-opacity="0.59"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_606_5266">
+                                    <rect width="29" height="26" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
